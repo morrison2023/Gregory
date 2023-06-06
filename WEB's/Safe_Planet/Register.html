@@ -1,0 +1,85 @@
+<html>
+  <link rel="shortcut icon" href="i.ico" type="image/x-icon" />
+  <head>
+    <style>
+      label {
+        color: #d2d2d2;
+      }
+      body {
+        background-image: url(./img/channels4_profile.ico);
+        background-repeat: no-repeat;
+        background-size: 1920px 1080px;
+        backdrop-filter: blur(5px);
+      }
+      form {
+        padding: 20px;
+        background-color: #006aff;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+      }
+      select {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+      }
+      button {
+        background-color: #f4acc4;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirm password">Confirm password:</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="check1"
+        >Do you want receive some emails about our World Disasters</label
+      >
+      <input type="checkbox" name="checkbox1" id="check1" />
+
+      <button type="submit" style="text-decoration: none">
+        <a href="Log in.html">Register</a>
+      </button>
+
+      <p align="center"><a href="Log in.html">Already have registered?</a></p>
+    </form>
+  </body>
+</html>

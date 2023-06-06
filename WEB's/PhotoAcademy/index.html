@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+      
+    />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="nav-wrapper">
+        <div class="brandname">PhotoAcademy <img style="height: 30px;" src="https://cdn-icons-png.flaticon.com/512/3004/3004613.png" alt=""></div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+              <a href="#" class="join-us"
+                >Join Us <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="intro-text">
+        <div class="subtitle">For better future</div>
+        <h1 class="main-title">High Quality Courses</h1>
+        <h2 class="sub-title">Find the right instructor</h2>
+        <div class="button-wrapper">
+          <a href="#" style="margin: 20px;" class="btn btn-purple">Explore Courses</a>
+          <a href="#" style="margin: 20px;" class="btn btn-white-outline">Learn More</a>
+        </div>
+        <div class="girl-img">
+          <img src="./images/Female-Photographer-PNG-Cutout.png" alt="Girl with camera"  style="width: 100%;"/>
+        </div>
+      </div>
+    </section>
+    <h1 class="card_main-text">Our Popular Student Works</h1>
+    <div
+      class="slider"
+      x-data="{start: true, end: false}"
+      style="padding-top: 150px"
+    >
+      <div
+        class="slider__content"
+        x-ref="slider"
+        x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;"
+      >
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1660752484961-5e34b5ee0a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8MzAwJTIweCUyMDUwMHxlbnwwfHwwfHw%3D&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 1</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1669176330691-885f452c5d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 2</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1597953877402-39fa31ef9c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 3</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1630768639597-3ee97d06ff7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 4</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1660752484961-5e34b5ee0a56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8MzAwJTIweCUyMDUwMHxlbnwwfHwwfHw%3D&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 5</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1669176330691-885f452c5d5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 6</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1597953877402-39fa31ef9c40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 7</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1630768639597-3ee97d06ff7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 8</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1601109206648-77730f0069b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 9</h2>
+          </div>
+        </div>
+        <div class="slider__item">
+          <img
+            class="slider__image"
+            src="https://images.unsplash.com/photo-1630768639597-3ee97d06ff7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+            alt="Image"
+          />
+          <div class="slider__info">
+            <h2>Card 10</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slider__nav" style="display: flex; justify-content: center">
+        <button
+          class="slider__nav__button"
+          x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});"
+          x-bind:class="start ? '' : 'slider__nav__button--active'"
+        >
+          Previous
+        </button>
+        <button
+          class="slider__nav__button"
+          x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});"
+          x-bind:class="end ? '' : 'slider__nav__button--active'"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+    <section class="video-section">
+      
+      <div  class="text-wrapper">
+        <h2 style="margin: 100px; text-align: center;">Watch our Graders Interview</h2>
+        <p style="padding:  50px;">
+          PhotoAcademy is a leading institution that offers professional photography courses to individuals who are passionate about capturing life's moments through the lens. Located in the heart of the city, the academy has a team of experienced photographers who teach the students the art of photography.
+        </p>
+        <div style="margin-left: 10px; " class="video-wrapper">
+          <iframe width="1140" height="641" src="https://www.youtube.com/embed/LiiuHUnC31Q" title="Интервью с выпускниками | RAW photoacademy |Наталия Богдан" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <a  href="#" style="width: 100%;
+        text-align: center;
+        margin: 40px; margin-left: -9px ;"  class="button"> Learn more</a>
+      </div>
+    </section>
+    <section>
+      <div class="text-wrapper">
+        <h1 style="top: 0px;" class="card_main-text">Our Popular Events</h1>
+      <div class="gallery-container">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1630768639597-3ee97d06ff7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>MicroPhotos</h3>
+              <p>
+                MicroFrames are the Best!
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1564918169934-0d6f93e08b78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>CarPhoto Trip</h3>
+              <p>
+                Make a picture of a such of expencive cars
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1551109370-9f8503576a23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>FlowerPhoto</h3>
+              <p>
+                Such a beautiful trip to a NatureField
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1565229117847-f4110d7bc60b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>HillTrip</h3>
+              <p>
+                Let's make a trip to our beautiful Hills
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1590998901109-76577950db74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>RestarauntTrip</h3>
+              <p>
+                Popular InstaPictures learning on this Trip
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1566868570094-276146cf3592?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Product 1" class="product-image" />
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="product-description">
+              <h3>NightTrip</h3>
+              <p>
+                An expencive one, must be over 18 years old
+              </p>
+            </div>
+            <div class="product-actions">
+              <button class="learn-more">Learn More</button>
+              <button class="buy-now">
+                $<span class="price"></span> Buy Now
+              </button>
+            </div>
+          </div>
+          
+          
+          <!-- суда еще можно вставить -->
+        </div>
+      </div>
+    </section>
+    <h1 style="top: 0px;" class="card_main-text">Our Reviews</h1>
+    <section class="reviews">
+      
+      <div class="review-card">
+        <div class="avatar"><img src="avatar1.png" alt="Avatar"></div>
+        <div class="review-info">
+          <h3>John Doe</h3>
+          <p><span class="stars"></span></p>
+          <p>Traaash! How'd I love this pictures!!!</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="avatar"><img src="avatar2.png" alt="Avatar"></div>
+        <div class="review-info">
+          <h3>Jane Smith</h3>
+          <p><span class="stars"></span></p>
+          <p>My son like it!</p>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="avatar"><img src="avatar3.png" alt="Avatar"></div>
+        <div class="review-info">
+          <h3>Bob Johnson</h3>
+          <p><span class="stars"></span></p>
+          <p>ULTIMATE ONE, KIDS AND ADULTS IN ONE COURSE!! ADORABLE!!!</p>
+        </div>
+      </div>
+    </section>
+    <main>
+      <h1>FAQ</h1>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">What types of courses are available on the site?</h2>
+          <span class="faq-t"></span>
+        </div>
+        <p class="answer">Our site offers a wide variety of high-quality courses covering subjects such as programming, data science, digital marketing, and more.
+
+        </p>
+      </div>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">How do I find the right instructor for my course?
+    </h2><span class="faq-t"></span>
+        </div>
+        <p class="answer">Our site makes it easy to find the right instructor for your course. You can search by subject, instructor name, or course rating to find the perfect fit.</p>
+      </div>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">Are the courses on the site self-paced or scheduled?
+    </h2><span class="faq-t"></span>
+        </div>
+        <p class="answer">We offer both self-paced and scheduled courses. You can choose the type of course that works best for your schedule and learning style.</p>
+      </div>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">What level of experience do I need to take courses on the site?
+    </h2><span class="faq-t"></span>
+        </div>
+        <p class="answer">Our courses are designed for learners of all levels, from beginners to advanced learners. Each course description includes information about the level of experience required.</p>
+      </div>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">Are the courses on the site free or do I need to pay for them?
+    </h2><span class="faq-t"></span>
+        </div>
+        <p class="answer">While some of our courses are free, others require payment. You can easily find pricing information on each course page.</p>
+      </div>
+      <div class="topic">
+        <div class="open">
+          <h2 class="question">How do I get help if I have questions or issues with my course?
+    </h2><span class="faq-t"></span>
+        </div>
+        <p class="answer"> Our site has a support team available 24/7 to assist with any questions or issues you may have. You can contact us through our website or email us directly.
+
+
+
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">bag</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">dress</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+  </body>
+</html>
